@@ -30,4 +30,10 @@ public class SimpleController {
         model.addAttribute("appName", appName);
         return "home";
     }
+
+    @GetMapping("/welcome")
+    public String welcome(){
+       System.out.println("welcome----------");
+       return "welcome";
+    }
 }
